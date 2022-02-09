@@ -1,0 +1,19 @@
+server:
+  port: 80
+spring:
+    # HTTP ENCODING
+    http:
+        encoding.charset: UTF-8
+        encoding.force: true
+        encoding:
+          enabled: true
+
+    datasource:
+        dbcp2:
+          validation-query: SELECT 1
+          test-on-borrow: true
+
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
